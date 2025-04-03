@@ -25,7 +25,7 @@ const HomePage = () => {
       </header>
       {/* hero section */}
       <main className="max-w-6xl mx-auto flex flex-col justify-center items-center py-40 text-white gap-4 text-center text-wrap">
-        <h1 className="text-4xl font-semibold">
+        <h1 className="text-6xl font-bold">
           Unlimited movies, Tv Shows, and more.
         </h1>
         <span className="text-lg font-semibold">
@@ -35,7 +35,6 @@ const HomePage = () => {
           Ready to Watch? Enter your email to create or restart your membership.
         </span>
 
-        {/* section two */}
         <div className="w-full">
           <form className="w-1/2 flex flex-col md:flex-row justify-center items-center gap-3 mx-auto">
             <input
@@ -53,24 +52,29 @@ const HomePage = () => {
           </form>
         </div>
       </main>
-      <div className="w-full h-0.5 bg-slate-500" />
+
+      <div className="w-full h-1 bg-slate-500" />
+
+      {/* section two */}
       <div className="bg-black">
-        <div className="max-w-6xl mx-auto flex justify-center items-center">
-          <div className="flex-1 flex flex-col justify-center items-start gap-2 text-white">
-            <h1 className="text-4xl font-semibold">Enjoy on your Tv</h1>
-            <span className="text-lg">
+        <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-center items-center py-10 px-4">
+          <div className="flex-1 flex flex-col justify-center items-start text-white text-center md:text-left">
+            <h1 className="w-full text-4xl md:text-5xl font-extrabold mb-2">
+              Enjoy on your Tv
+            </h1>
+            <span className="text-lg md:text-xl">
               Watch on Smart Tvs, Playstation, Xbox, Chromecast, Apple Tv,
               Blue-ray players, and more.
             </span>
           </div>
-          <div className="flex-1">
-            <img src={tv} alt="tv" className="object-contain" />
+          <div className="flex-1 relative">
+            <img src={tv} alt="tv" className="relative z-20" />
             <video
               autoPlay={true}
               loop
               muted
               playsInline
-              className="object-contain"
+              className="z-10 absolute h-1/2 top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2"
             >
               <source src={heroVideo} type="video/mp4" />
             </video>
