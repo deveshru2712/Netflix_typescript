@@ -4,6 +4,10 @@ import { ChevronRight } from "lucide-react";
 import logo from "../assets/netflix-logo.png";
 import tv from "../assets/tv.png";
 import heroVideo from "../assets/hero-vid.m4v";
+import strangeThingLg from "../assets/stranger-things-lg.png";
+import strangeThingSm from "../assets/stranger-things-sm.png";
+
+import download from "../assets/download-icon.gif";
 
 const HomePage = () => {
   return (
@@ -81,6 +85,47 @@ const HomePage = () => {
           </div>
         </div>
       </div>
+
+      <div className="w-full h-1 bg-slate-500" />
+
+      {/* section three */}
+
+      <div className="bg-black">
+        <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-center items-center py-10 px-4">
+          <div className="flex-1 flex flex-col order-2 justify-center items-start text-white text-center md:text-left">
+            <h1 className="w-full text-4xl md:text-5xl font-extrabold mb-2">
+              Download your shows to watch offline
+            </h1>
+            <span className="text-lg md:text-xl">
+              Save your favorites easily and always have something to watch.
+            </span>
+          </div>
+
+          <div className="order-1 flex-1 relative text-white">
+            <img src={strangeThingLg} alt="strangeThing_banner" />
+            <div className="bg-black px-2 flex justify-around items-center gap-2 border border-slate-100 absolute left-1/2 top-2/3 -translate-x-1/2 translate-y-1/2 rounded-sm">
+              <img
+                src={strangeThingSm}
+                alt="strangeThing_banner"
+                className="object-contain size-24"
+              />
+              <div className="flex flex-col justify-center items-start">
+                <span className="text-lg font-semibold text-nowrap">
+                  Strange Things
+                </span>
+                <span className="text-sm text-blue-600">Downloading...</span>
+              </div>
+              <img
+                src={download}
+                alt="downloading"
+                className="object-contain size-12"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="w-full h-1 bg-slate-500" />
     </div>
   );
 };
