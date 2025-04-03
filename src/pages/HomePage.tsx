@@ -1,6 +1,10 @@
 import { Link } from "react-router-dom";
 import { ChevronRight } from "lucide-react";
 
+import logo from "../assets/netflix-logo.png";
+import tv from "../assets/tv.png";
+import heroVideo from "../assets/hero-vid.m4v";
+
 const HomePage = () => {
   return (
     <div className="hero-bg">
@@ -8,11 +12,7 @@ const HomePage = () => {
       <header className="max-w-6xl px-6 mx-auto py-4">
         <div className="flex justify-between items-center object-contain">
           <a>
-            <img
-              src="/netflix-logo.png"
-              alt="netflix"
-              className="h-10 lg:h-15"
-            />
+            <img src={logo} alt="netflix" className="h-10 lg:h-15" />
           </a>
           <div>
             <Link to={"/login"}>
@@ -64,7 +64,7 @@ const HomePage = () => {
             </span>
           </div>
           <div className="flex-1">
-            <img src="/tv.png" alt="tv" className="object-contain" />
+            <img src={tv} alt="tv" className="object-contain" />
             <video
               autoPlay={true}
               loop
@@ -72,7 +72,7 @@ const HomePage = () => {
               playsInline
               className="object-contain"
             >
-              <source src="./hero-vid.m4v" type="video/mp4" />
+              <source src={heroVideo} type="video/mp4" />
             </video>
           </div>
         </div>
