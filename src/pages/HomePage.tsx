@@ -62,7 +62,7 @@ const HomePage = () => {
       {/* section two */}
       <div className="bg-black">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-center items-center py-10 px-4">
-          <div className="flex-1 flex flex-col justify-center items-start text-white text-center md:text-left">
+          <div className="flex-1 order-1 flex flex-col justify-center items-start text-white text-center md:text-left">
             <h1 className="w-full text-4xl md:text-5xl font-extrabold mb-2">
               Enjoy on your Tv
             </h1>
@@ -71,7 +71,7 @@ const HomePage = () => {
               Blue-ray players, and more.
             </span>
           </div>
-          <div className="flex-1 relative">
+          <div className="flex-1 order-2 relative">
             <img src={tv} alt="tv" className="relative z-20" />
             <video
               autoPlay={true}
@@ -101,9 +101,9 @@ const HomePage = () => {
             </span>
           </div>
 
-          <div className="order-1 flex-1 relative text-white">
+          <div className="order-1 flex-1 relative text-white mb-10">
             <img src={strangeThingLg} alt="strangeThing_banner" />
-            <div className="bg-black px-2 flex justify-around items-center gap-2 border border-slate-100 absolute left-1/2 top-2/3 -translate-x-1/2 translate-y-1/2 rounded-sm">
+            <div className="w-3/4 lg:w-3/5  bg-black px-2 flex justify-around items-center border border-slate-100 absolute left-1/2 top-2/3 -translate-x-1/2 translate-y-1/6 rounded-sm">
               <img
                 src={strangeThingSm}
                 alt="strangeThing_banner"
@@ -126,6 +126,7 @@ const HomePage = () => {
       </div>
 
       <div className="w-full h-1 bg-slate-500" />
+      {/* section four */}
     </div>
   );
 };
