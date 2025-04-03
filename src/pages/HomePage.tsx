@@ -6,11 +6,13 @@ import tv from "../assets/tv.png";
 import strangeThingLg from "../assets/stranger-things-lg.png";
 import strangeThingSm from "../assets/stranger-things-sm.png";
 import pc from "../assets/device-pile.png";
+import kids from "../assets/kids.png";
 
 import download from "../assets/download-icon.gif";
 
 import heroVideo from "../assets/hero-vid.m4v";
 import multiDeviceVideo from "../assets/video-devices.m4v";
+import Footer from "../components/Footer";
 
 const HomePage = () => {
   return (
@@ -59,9 +61,7 @@ const HomePage = () => {
           </form>
         </div>
       </main>
-
       <div className="w-full h-1 bg-slate-500" />
-
       {/* section two */}
       <div className="bg-black">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-center items-center py-10 px-4">
@@ -88,11 +88,8 @@ const HomePage = () => {
           </div>
         </div>
       </div>
-
       <div className="w-full h-1 bg-slate-500" />
-
       {/* section three */}
-
       <div className="bg-black">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-center items-center py-10 px-4">
           <div className="flex-1 flex flex-col order-2 justify-center items-start text-white text-center md:text-left">
@@ -127,10 +124,8 @@ const HomePage = () => {
           </div>
         </div>
       </div>
-
       <div className="w-full h-1 bg-slate-500" />
       {/* section four */}
-
       <div className="bg-black">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-center items-center py-10 px-4">
           <div className="flex-1 order-1 flex flex-col justify-center items-start text-white text-center md:text-left">
@@ -156,6 +151,27 @@ const HomePage = () => {
           </div>
         </div>
       </div>
+      <div className="w-full h-1 bg-slate-500" />
+      {/* section fifth */}
+      <div className="bg-black">
+        <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-center items-center py-10 px-4">
+          <div className="flex-1 flex flex-col order-2 justify-center items-start text-white text-center md:text-left">
+            <h1 className="w-full text-4xl md:text-5xl font-extrabold mb-2">
+              Create profiles for kids
+            </h1>
+            <span className="text-lg md:text-xl">
+              Send Kids on adventure with their favorite characters in a space
+              made just for them-free with your membership
+            </span>
+          </div>
+
+          <div className="order-1 flex-1 relative text-white mb-10">
+            <img src={kids} alt="kids" />
+          </div>
+        </div>
+      </div>
+      <div className="w-full h-1 bg-slate-500" />
+      <Footer />
     </div>
   );
 };
