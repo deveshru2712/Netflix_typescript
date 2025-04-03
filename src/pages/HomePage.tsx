@@ -3,11 +3,14 @@ import { ChevronRight } from "lucide-react";
 
 import logo from "../assets/netflix-logo.png";
 import tv from "../assets/tv.png";
-import heroVideo from "../assets/hero-vid.m4v";
 import strangeThingLg from "../assets/stranger-things-lg.png";
 import strangeThingSm from "../assets/stranger-things-sm.png";
+import pc from "../assets/device-pile.png";
 
 import download from "../assets/download-icon.gif";
+
+import heroVideo from "../assets/hero-vid.m4v";
+import multiDeviceVideo from "../assets/video-devices.m4v";
 
 const HomePage = () => {
   return (
@@ -127,6 +130,32 @@ const HomePage = () => {
 
       <div className="w-full h-1 bg-slate-500" />
       {/* section four */}
+
+      <div className="bg-black">
+        <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-center items-center py-10 px-4">
+          <div className="flex-1 order-1 flex flex-col justify-center items-start text-white text-center md:text-left">
+            <h1 className="w-full text-4xl md:text-5xl font-extrabold mb-2">
+              Watch everywhere
+            </h1>
+            <span className="text-lg md:text-xl">
+              Stream unlimited movies and Tv shows on your phone, tablet, laptop
+              and Tv.
+            </span>
+          </div>
+          <div className="flex-1 order-2 relative">
+            <img src={pc} alt="pc" className="relative z-20" />
+            <video
+              autoPlay={true}
+              loop
+              muted
+              playsInline
+              className="z-10 absolute h-1/2 top-1/3 -translate-y-1/2 left-1/2 -translate-x-1/2 max-w-[63%]"
+            >
+              <source src={multiDeviceVideo} type="video/mp4" />
+            </video>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
