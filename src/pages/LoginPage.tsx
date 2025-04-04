@@ -14,7 +14,7 @@ const LoginPage = () => {
 
       <div className="flex justify-center items-center my-20 mx-3 text-white">
         <div className="w-1/3 bg-black/60 rounded-lg px-10 py-4 text-center">
-          <h1 className="text-2xl font-extrabold mb-5">Log In </h1>
+          <h1 className="text-2xl font-semibold mb-5">Log In </h1>
           <form className="w-full flex flex-col justify-center items-center gap-5">
             <div className="w-full flex flex-col justify-center items-start gap-2 ">
               <label htmlFor="email">Email</label>
